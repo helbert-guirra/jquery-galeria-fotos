@@ -4,56 +4,75 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
 header{
     background-color: #5f27cd;
-    padding: 16px 0;
+    padding: 16px 0px;
     color: #fff;
     display: flex;
-    border-bottom: 16px solid #341f97;
+    border-bottom: 14px solid #471c9b;
     justify-content: center;
     text-transform: uppercase;
     font-style: italic;
 }
 
-header button {
-    margin-left: 16px;
+header button{
+    margin-left: 14px;
+    padding: 0px 10px;
 }
 
-form {
-    background-color: #c8d6e5;
-    padding: 24px 0;
+form{
+    background-color: #5e27cd1a;
+    padding: 24px 0px;
     text-align: center;
     display: none;
 }
 
-form h2 {
-    margin-bottom: 16px;
+form h2{
+    margin-bottom: 14px;
 }
 
-input,
-button{
-    padding: 8px;
+form input,
+form button{
+    padding: 10px;
 }
 
 button{
-    background-color: #009432;
     border: none;
+    background-color: rgb(28, 170, 123);
+    font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
     color: #fff;
+    border-radius: 23px;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
-#botao-cancelar{
-    background-color: red;
+button:hover{
+    background-color: rgb(45, 219, 161);
 }
 
-ul {
+#botao-cancelar{
+    order: none;
+    background-color: rgb(170, 56, 28);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#botao-cancelar:hover{
+    background-color: rgb(218, 74, 38);
+}
+
+ul{
     display: flex;
     flex-wrap: wrap;
 }
 
-ul li {
+ul li{
     max-width: 25%;
     list-style: none;
     position: relative;
@@ -61,26 +80,28 @@ ul li {
     overflow-y: hidden;
 }
 
-ul li img {
-    width: 100%;
+ul li img{
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
 }
 
-.overlay-imagem-link {
+.overlay-link{
     padding: 16px;
-    background-color: rgba(0, 0, 0,  0.7);
+    background-color: #00000041;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     opacity: 0;
-    transition: all ease 5s;
+    transition: all ease .2s;
 }
 
-.overlay-imagem-link a {
-    color: #fff;
+.overlay-link a{
+    color: rgb(54, 173, 177);
     text-decoration: none;
 }
 
-ul li:hover .overlay-imagem-link {
+ul li:hover .overlay-link{
     opacity: 1;
 }
